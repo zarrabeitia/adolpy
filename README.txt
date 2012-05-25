@@ -31,7 +31,7 @@ wrap in a new Active).
 
 THIS IS A TOY PROJECT
 
-This code is published for teaching purposes. You don't want to use it for for 
+This code is published for learning purposes. You don't want to use it for for 
 serious projects. I wrote it in about two days ("do you remember that the AD 
 project is due this week? / Ooops..."). There are higher quality AD libraries 
 out there. This is simpler to use than most of the libraries out there, which may 
