@@ -31,17 +31,17 @@ wrap in a new Active).
 
 THIS IS A TOY PROJECT
 
-This code is published for learning purposes. You don't want to use it for for 
+This code is published for learning purposes. You don't want to use it for  
 serious projects. I wrote it in about two days ("do you remember that the AD 
 project is due this week? / Ooops..."). There are higher quality AD libraries 
-out there. This is simpler to use than most of the libraries out there, which may 
-make it useful to illustrate AD, but it is incomplete for real problems (only a 
-few functions from math and the builtin abs are supported). Most importantly, it 
-doesn't support numpy. You are free to use this code (GPLv3), but I advise you
-to check it out if you want to play with AD or to illustrate AD (no compilation 
-or installation required, fully usable from the ipython console), and when you
-decide that AD is the way to go, find a high quality library. Of course, if you
-want to improve it for any reason, you are more than welcomed to.
+out there. Adolpy is simpler to use than most of them, which may make it useful to 
+illustrate AD, but it is incomplete for real problems (only a few functions from 
+math and the builtin abs are supported). Most importantly, it doesn't support numpy. 
+You are free to use this code (GPLv3), but I advise you to check it out if you 
+want to play with AD or to illustrate AD (no compilation or installation required, 
+fully usable from the ipython console), and when you decide that AD is the way to go, 
+find a high quality library. Of course, if you want to improve it for any reason, 
+you are more than welcomed to.
 
 See the example.py file for examples.
 
