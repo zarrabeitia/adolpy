@@ -25,9 +25,9 @@ input variable is replaced by a tracer object (named "Active"), which records th
 partial derivatives as they move through the function. Each overloaded method
 must call the original implementation and perform the chain rule. To reduce the
 boilerplate code (call the original implementation, then compute the derivative,
-then wrap the two values into a new Active), I wrote decorators that given the
-derivative function, will add the rest of the boilerplate (call the original, 
-wrap in a new Active).
+apply the chain rule, then wrap the two values into a new Active), I wrote 
+decorators that given the derivative function, will add the rest of the boilerplate 
+(call the original, apply the chain rule, wrap in a new Active).
 
 THIS IS A TOY PROJECT
 
