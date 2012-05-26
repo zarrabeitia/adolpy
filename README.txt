@@ -1,6 +1,7 @@
 An implementation of Automatic Differentiation in python.
 
-== BACKGROUND
+BACKGROUND
+==========
 
 Briefly, Automatic (or Algorithmic) Differention are techniques to obtain the
 "symbolic" derivative of a piece of source code, i.e, given the code of a 
@@ -26,7 +27,8 @@ with Active objects. Currently, "activated" versions for of the functions in
 math.* and the builtin abs(x) function are supplied in the modules 
 adolpy.admath and adolpy.builtins, respectively.
 
-== INSTALLATION INSTRUCTIONS
+INSTALLATION INSTRUCTIONS
+=========================
 
 1) Check out the source code.
 2) Place the adolpy directory in your PYTHONPATH.
@@ -35,7 +37,8 @@ OR
 
 1) pip install -e git+https://zarrabeitia@github.com/zarrabeitia/adolpy.git#egg=adolpy
 
-== USAGE (BASIC)
+USAGE (BASIC)
+=============
 
 Define your target function as you normally would, using the adolpy functions 
 instead of the builtin math / __builtins__. You can call extra functions, as long 
@@ -120,7 +123,8 @@ implementation.
 
 See the example.py file for examples.
 
-==== Usage (Advanced: activating new functions)
+Usage (Advanced: activating new functions)
+------------------------------------------
 
 All functions directly or indirectly used by the target function must be "activated".
 To activate a function means to rewrite it, such that it accepts an Active instance,
@@ -183,7 +187,8 @@ decorator to simplify function activation:
     1
 
 
-== LIMITATIONS
+LIMITATIONS
+===========
 
 THIS IS A TOY PROJECT
 
@@ -203,7 +208,8 @@ Google's Ceres solver at http://code.google.com/p/ceres-solver/, which also incl
 an AD module. A list of AD libraries can be found at 
 http://en.wikipedia.org/wiki/Automatic_differentiation
 
-== ACKNOWLEDGMENTS (and the reason for the name "adolpy")
+ACKNOWLEDGMENTS (and the reason for the name "adolpy")
+======================================================
 
 The AD course that gave rise to this project was taught by Professor Andreas Griewank
 (http://www.mathematik.hu-berlin.de/~griewank/) at the University of Havana 
@@ -216,6 +222,5 @@ http://www.coin-or.org/projects/ADOL-C.xml
 When I was preparing the final presentation, I wanted to give tribute to professor
 Griewank's work, so I used the name "adolpy". Not very original... but he seemed 
 to like it, and I certainly did.
-
 
 
