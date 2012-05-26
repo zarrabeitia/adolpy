@@ -35,16 +35,16 @@ adolpy.admath and adolpy.builtins, respectively.
 
 == USAGE (BASIC)
 
+Define your target function as you normally would, using the adolpy functions 
+instead of the builtin math / __builtins__. You can call extra functions, as long 
+as they are "activated", and use conditionals, closures and loops.
+
     >>> from __future__ import division # Always a good thing to do
     >>> import adolpy
     >>> from adolpy import admath as math
     >>> from adolpy.builtins import *
 
     >>> def myfunction(a, b, c, d):
-    ...     # ... Define your python function as you normally would, using the
-    ...     # ... adolpy functions instead of the builtin math / __builtins__
-    ...     # ... You can call extra functions, as long as they are "activated",
-    ...     # ... and use conditionals, closures and loops.
     ...     r1 = a*b + c*d
     ...     z = 1
     ...     for i in xrange(5):
@@ -52,13 +52,13 @@ adolpy.admath and adolpy.builtins, respectively.
     ...     r2 = z + d/c + math.cos(d)
     ...     return r1, r2 # and so on ...
 
-If you need to evaluate the function, proceed as usual:
+To evaluate the function, proceed as usual:
 
     >>> r1, r2 = myfunction(1, 2, 3, 4)
     >>> print r1, r2
     14 1.34635637914
 
-If you need the derivatives of the function, use the adolpy.derivate method:
+To evaluate the derivatives, use the adolpy.derivate method:
 
     >>> derivative = adolpy.derivate(myfunction)
 
@@ -95,7 +95,7 @@ vector for API consistency, i.e,
     10
 
 You can compute higher order derivatives by repeatedly applying the adolpy.derivate 
-transformation, at the cost of a higher computational cost (both cpu and memory), and
+transformation, with a higher computational cost (both cpu and memory), and
 a more complex return value. For higher order derivatives, it is probably better to
 use the backwards method (not implemented by this library)
 
