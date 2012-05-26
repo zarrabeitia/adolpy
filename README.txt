@@ -31,7 +31,9 @@ adolpy.admath and adolpy.builtins, respectively.
 1) Check out the source code.
 2) Place the adolpy directory in your PYTHONPATH.
 
-(TODO: make it pip-installable)
+OR
+
+1) pip install -e git+https://zarrabeitia@github.com/zarrabeitia/adolpy.git#egg=adolpy
 
 == USAGE (BASIC)
 
