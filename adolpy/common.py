@@ -84,12 +84,17 @@ def active_function(module=math):
     """
     Given a function's derivative and it's name, returns an active function
     that computes both the original value and the derivative of it's argument. 
-    The original function is looked for specified module.
+    You can pass in the original function (a callable) or the module that contains it.
+    If you pass a non-callable object, the original functions is assumed to be an 
+    attribute of the same name as the decorated function.
     """
     def decorator(derivative):
         name = derivative.__name__
-        #original_func = derivative.func_globals.get(name,getattr(math,name))
-        original_func = getattr(module,name)
+        if hasattr(module, "__call__"):
+            # It wasn't a module, it was the source function. 
+            original_func = module
+        else:
+            original_func = getattr(module,name)
         def active_function(x):
             if not isinstance(x, Active):
                 return original_func(x)
