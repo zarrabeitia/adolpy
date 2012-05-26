@@ -18,6 +18,17 @@
 #       Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #       MA 02110-1301, USA.
 
-from adolpy import derivate
+__author__ = "Luis A. Zarrabeitia"
+__copyright__ = "Copyright 2011, Luis A. Zarrabeitia"
+__credits__ = ["Luis A. Zarrabeitia"]
+
+__license__ = "GPLv3 or later"
+__version__ = "0.1"
+__maintainer__ = "Luis A. Zarrabeitia"
+__email__ = "zarrabeitia at gmail dot com"
+__status__ = "Development"
+__url__ = "https://github.com/zarrabeitia/adolpy"
+
+from .adolpy import derivate
 from common import Active
 import admath as math
