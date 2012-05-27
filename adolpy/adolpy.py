@@ -97,7 +97,7 @@ def derivate(func, directions=None):
     """
     if directions is not None:
         directions = zip(*directions) # transpose the directions.
-    def derivada(*args):
+    def derivative(*args):
         dim = len(args)
         if not directions:
             args = (makevar(arg, pos, dim) for pos,arg in enumerate(args))
@@ -110,7 +110,7 @@ def derivate(func, directions=None):
         else:
             res = ensure_active(res, dim)      
         return res
-    return derivada
+    return derivative
 
 def unpack(value):
     if not isinstance(value, Active):
