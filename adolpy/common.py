@@ -58,16 +58,12 @@ class Active(object):
             res = res.dot[index]
         res = getvalue(res)
         return res
-    def __float__(self):
-        return float(self.getvalue())
-    def __int__(self):
-        return int(self.getvalue())
     def getvalue(self):
         if hasattr(self.value,"getvalue"):
             return self.value.getvalue()
         else:
             return self.value
-    def __cmp__(self, other): # Warning - can only compares the values
+    def __cmp__(self, other): # Warning - can only compare the values
         if isinstance(other, Active):
             other = other.value
         return cmp(self.value, other)
