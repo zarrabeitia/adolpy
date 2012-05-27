@@ -23,8 +23,8 @@ This project implements the the Forward method through operator overloading.
 Tracer objects, called "Active"s in this implementation, are used to trace the 
 execution of the function for a given input and store the partial derivatives
 at each step. Routines used by the target function must be prepared to deal
-with Active objects. Currently, "activated" versions for of the functions in 
-math.* and the builtin abs(x) function are supplied in the modules 
+with Active objects. Currently, "activated" versions for some of the functions 
+in math.* and the builtin abs(x) function are supplied in the modules 
 adolpy.admath and adolpy.builtins, respectively.
 
 INSTALLATION INSTRUCTIONS
@@ -42,7 +42,7 @@ USAGE (BASIC)
 
 Define your target function as you normally would, using the adolpy functions 
 instead of the builtin math / __builtins__. You can call extra functions, as long 
-as they are "activated", and use conditionals, closures and loops.
+as they are "activated". You can also use conditionals, closures and loops.
 
     >>> from __future__ import division # Always a good thing to do
     >>> import adolpy
