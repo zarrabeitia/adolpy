@@ -15,7 +15,7 @@ unpractical for large problems.
 AD does its black magic by tracing the execution of the target function, analyzing
 each transformation of the input values all the way to the outputs. In the 
 "forward" method, each operation is replaced by the chain rule, such that both
-the value and the derivative are computed simultaneously. In the "backward" 
+the value and the derivative are computed simultaneously. In the "reverse" 
 method, each operation is used to build the expression tree relating each
 output with each input variable.
 
@@ -102,7 +102,7 @@ vector for API consistency, i.e,
 You can compute higher order derivatives by repeatedly applying the adolpy.derivate 
 transformation, with a higher computational cost (both cpu and memory), and
 a more complex return value. For higher order derivatives, it is probably better to
-use the backwards method (not implemented by this library)
+use the reverse method (not implemented by this library)
 
     >>> ddf = adolpy.derivate(df)
     >>> dddf = adolpy.derivate(ddf)
